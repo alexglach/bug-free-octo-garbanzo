@@ -31,7 +31,7 @@ class Weapon
   end
 
   def picked_up?
-    bot.pick_up(weapon)
+    @bot != nil ? !!bot.weapon : false
   end
 
 
