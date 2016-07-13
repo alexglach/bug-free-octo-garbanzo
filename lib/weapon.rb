@@ -6,7 +6,7 @@ class Weapon
 
   attr_writer :bot
 
-  def initialize(name, damage=nil)
+  def initialize(name, damage=0)
     if name.class != String
       raise ArgumentError
     else
